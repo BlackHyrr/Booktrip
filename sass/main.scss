@@ -26,3 +26,37 @@
         width: 100%;
     }
 }
+
+#travels {
+    background-image: linear-gradient(white 35%, rgba(255,122,0,0.28) 35%);
+}
+.travels-container {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+
+    .travels-cards {
+        width: 20%;
+        background-color: white;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+
+        img {
+            width: 100%;
+        }
+        .travels-infos {
+            padding: 0.5rem;
+        }
+        .travels-infos-plus {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+        .price {
+            font-size: 1.3rem;
+        }
+        .note {
+            border: 2px solid $PrimaryColor;
+        }
+    }
+}
