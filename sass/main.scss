@@ -9,3 +9,20 @@
     "./base/typography";
 @import
     "./utils/extends";
+
+* {
+    box-sizing: border-box;
+}
+
+.introduction-article {
+    display: flex;
+    line-height: 1.2;
+
+    div {
+        max-width: 50%;
+        padding: 0.8rem;
+    }
+    img {
+        width: 100%;
+    }
+}
