@@ -10,6 +10,15 @@
 @import
     "./utils/extends";
 
+// Global
+
+* {
+    box-sizing: border-box;
+}
+section {
+    margin-top: 8rem;
+}
+
 // SCSS Header
 
 header {
@@ -207,7 +216,7 @@ header::before {
     display: flex;
     align-items: center;
     }
-      
+
 .booking-buttons button {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -221,11 +230,8 @@ header::before {
     margin-top: 1.5rem;
     position: relative;
 }
-    
 
-* {
-    box-sizing: border-box;
-}
+// Section 1 | Introduction
 
 .introduction-article {
     display: flex;
@@ -239,6 +245,8 @@ header::before {
         width: 100%;
     }
 }
+
+// Section 2 | Travels
 
 #travels {
     background-image: linear-gradient(white 35%, rgba(255,122,0,0.28) 35%);
