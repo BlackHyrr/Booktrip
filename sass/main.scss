@@ -7,8 +7,15 @@
 // Import
 @import 
     "./base/typography";
+
 @import
     "./utils/extends";
+
+@import
+    "./components/navbar";
+
+@import 
+    "./layout/header";
 
 @import 
     "./pages/home";
@@ -19,6 +26,137 @@
     width: 15px;
     -webkit-text-stroke: 0.1px solid black;
 }
+    
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+    
+.auth-buttons button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-left: 0.625rem; 
+    padding: 1rem 1.875rem; 
+    border: 0.125rem solid $PrimaryColor; 
+    background-color: transparent;
+    color: $PrimaryColor; 
+    font-size: 0.9375rem; 
+    cursor: pointer;
+    border-radius: 2.5rem; 
+}
+    
+.auth-buttons #inscription-btn {
+    background-color: $PrimaryColor; 
+    color: #fff;
+    border-radius: 2.5rem; 
+}
+    
+.auth-buttons #connexion-btn {
+    margin-right: 1.25rem; 
+}
+    
+.middle-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 50rem; 
+    height: 18.75rem; 
+}
+    
+.searchBar-div {
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 37.5rem; 
+    height: 3.9375rem; 
+    background-color: #fff;
+}
+    
+.textBar-div {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 25rem; 
+    height: 2.375rem; 
+}
+    
+.textBar-div h2 {
+    font-style: italic;
+    font-weight: 700;
+}
+    
+.buttonSearch-div {
+    position: absolute;
+    height: 3.9375rem; 
+    width: 3.75rem; 
+    background-color: $PrimaryColor;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.selectItems1-div,
+.selectItems2-div,
+.selectItems3-div,
+.selectItems4-div {
+    height: 3.9375rem; 
+    width: 8.5rem; 
+    float: left; 
+    border-right: 0.0625rem solid #ddd; 
+}
+    
+.selectItems1-div p,
+.selectItems2-div p,
+.selectItems3-div p,
+.selectItems4-div p {
+    color: #818181; 
+    margin: 0; 
+    font-size: 0.6875rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-top: 0.5rem; 
+    font-family: 'Poppins';
+}
+    
+.searchBar-div select {
+    width: 100%;
+    padding: 0.5rem; 
+    border: none; 
+    border-radius: 0.25rem; 
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 500;
+    }
+    
+.booking-buttons {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    }
+      
+.booking-buttons button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0.625rem 1.875rem; 
+    background-color: $PrimaryColor; 
+    border: 0.125rem solid $PrimaryColor; 
+    font-size: 0.9375rem; 
+    cursor: pointer;
+    border-radius: 2.5rem; 
+    color: #fff;
+    margin-top: 1.5rem;
+    position: relative;
+}
+    
 
 * {
     box-sizing: border-box;
@@ -34,5 +172,39 @@
     }
     img {
         width: 100%;
+    }
+}
+
+#travels {
+    background-image: linear-gradient(white 35%, rgba(255,122,0,0.28) 35%);
+}
+.travels-container {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+
+    .travels-cards {
+        width: 20%;
+        background-color: white;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+
+        img {
+            width: 100%;
+        }
+        .travels-infos {
+            padding: 0.5rem;
+        }
+        .travels-infos-plus {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+        .price {
+            font-size: 1.3rem;
+        }
+        .note {
+            border: 2px solid $PrimaryColor;
+        }
     }
 }
