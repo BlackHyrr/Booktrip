@@ -159,3 +159,90 @@
         }
     }
 }
+
+// Section 4 | Contact
+
+.contact-section {
+    p{
+        font-family: 'Poppins';
+        color: #171717;
+        line-height: 1.5rem;
+   }
+    .contactText {
+        max-width: 950px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 4rem;
+   }
+    .contact-form {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 5rem;
+   }
+    .contact-form form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+   }
+    .contact-form h3 {
+        font-family: 'Poppins';
+        color: #171717;
+        margin-bottom: 20px;
+   }
+    #message {
+        width: 1000px;
+        height: 200px;
+   }
+    #nom,#prenom{
+        width: 285px;
+        height: 50px;
+   }
+    #email,#tel{
+        width: 600px;
+        height: 50px;
+   }
+    .contact-form label {
+        display: block;
+        margin-bottom: 20px;
+        font-family: 'Poppins';
+        color: #171717;
+        text-align: left;
+   }
+    .contact-form input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #757474;
+   }
+    .contact-form button {
+        background-color: #F46D1D;
+        color: white;
+        padding: 10px 60px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Poppins';
+   }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+   }
+    .form-group1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        margin-right: 22.5rem;
+   }
+    .contact-form button:hover {
+        background-color: #e66000;
+   }
+}
+
