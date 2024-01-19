@@ -7,6 +7,8 @@
     justify-content: flex-start; 
     padding: 0 1.25rem; 
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+    position: relative;
+    z-index: 2;
 }
     
 .navbar img {

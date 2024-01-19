@@ -1,15 +1,25 @@
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 17.5rem;
     background-color: black; 
     color: #fff; 
     padding: 1.25rem; 
     box-sizing: border-box;
-    width: 100%;
     bottom: 0;
-    margin-top: 3rem;
+}
+.footer-container {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: left; 
     align-items: center;
+    margin-top: 3rem;
+    width: 85%;
+}
+
+.footer-copyright {
+    font-size: 14px;
 }
 
 .divLogoSocials {
