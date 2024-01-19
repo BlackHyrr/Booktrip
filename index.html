@@ -6,9 +6,68 @@
 		<title>Booktrip</title>
 		<meta name="description" content="" />
 		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<nav class="navbar">
+			   <img src="images/logo.svg" alt="Logo">
+			   <ul class="nav-list">
+				  <li><a href="#">Accueil</a></li>
+				  <li><a href="#">Nos Voyages</a></li>
+				  <li><a href="#">Qui sommes nous ?</a></li>
+			   </ul>
+			   <div class="auth-buttons">
+				  <button id="inscription-btn">Inscription</button>
+				  <button id="connexion-btn">Connexion</button>
+			   </div>
+			</nav>
+			<div class="middle-div">
+			   <h1>VOTRE AVENTURE DÉBUTE ICI !</h1>
+			   <br>
+			   <p>Bienvenue chez l’agence <span class="text-highlight">Booktrip</span>, votre expert en<span class="text-highlight"> voyages d'aventure</span> dans la nature. Plongez au cœur de destinations époustouflantes avec l’aide de notre équipe passionnée.<br><br> Laissez-nous être votre guide vers des horizons inexplorés, où chaque voyage devient une<br><span class="text-highlight"> aventure captivante</span>. Préparez-vous à créer des souvenirs inoubliables et à embrasser la <br><span class="text-highlight">beauté sauvage du monde</span>.</p>
+			   <div class="booking-buttons">
+				  <button>Réservez votre aventure ! </button>                
+			   </div>
+			</div>
+			<div class="textBar-div">
+			   <h2>Explorez, découvrez, vivez.</h2>
+			</div>
+			<div class="searchBar-div">
+			   <div class="selectItems1-div">
+				  <p>Destination</p>
+				  <select>
+					 <option value="" disabled selected>Islande</option>
+					 <option value="destination">Destination à choisir</option>
+				  </select>
+			   </div>
+			   <div class="selectItems2-div">
+				  <p>Depart</p>
+				  <select>
+					 <option value="" disabled selected>01/01/2024</option>
+					 <option value="dateDepart">Date à choisir</option>
+				  </select>
+			   </div>
+			   <div class="selectItems3-div">
+				  <p>Retour</p>
+				  <select>
+					 <option value="" disabled selected>08/01/2024</option>
+					 <option value="dateRetour">Date à choisir</option>
+				  </select>
+			   </div>
+			   <div class="selectItems4-div">
+				  <p>Personnes</p>
+				  <select>
+					 <option value="" disabled selected>2 Adultes</option>
+					 <option value="personnes">Personnes à choisir</option>
+				  </select>
+			   </div>
+			   <div class="buttonSearch-div"><img src="images/icons/chevron-right-solid-white.svg" alt="Logo">
+			   </div>
+			</div>
+		 </header>
 		<main>
 			<!-- Section | Introduction -->
 			<section class="container" id="introduction">
