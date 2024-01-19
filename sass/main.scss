@@ -21,6 +21,15 @@
     "./pages/home";
 
 
+// Global
+
+* {
+    box-sizing: border-box;
+}
+section {
+    margin-top: 8rem;
+}
+
 .fa-star, .fa-star-half-stroke {
     color: $StarColor;
     width: 15px;
@@ -142,7 +151,7 @@
     display: flex;
     align-items: center;
     }
-      
+
 .booking-buttons button {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -156,11 +165,8 @@
     margin-top: 1.5rem;
     position: relative;
 }
-    
 
-* {
-    box-sizing: border-box;
-}
+// Section 1 | Introduction
 
 .introduction-article {
     display: flex;
@@ -174,6 +180,8 @@
         width: 100%;
     }
 }
+
+// Section 2 | Travels
 
 #travels {
     background-image: linear-gradient(white 35%, rgba(255,122,0,0.28) 35%);
