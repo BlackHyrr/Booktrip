@@ -1,0 +1,70 @@
+footer {
+    height: 17.5rem;
+    background-color: black; 
+    color: #fff; 
+    padding: 1.25rem; 
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.divLogoSocials {
+    margin-left: 10.5rem;
+    height: 6.6875rem;
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.divSocials {
+    width: 12rem;
+    height: 4.6875rem;
+    border: 0.125rem solid $PrimaryColor; 
+    align-items: center;
+    display: flex;
+}
+
+.divSocials img {
+    margin-right: 0.35rem;
+    margin-left: 0.35rem;
+}
+
+.divFirstMenu{
+    height: 9.8125rem;
+    width: 13.875rem;    
+    margin-left: 14rem;
+}
+
+.divSecondMenu{
+    height: 9.8125rem;
+    width: 13.875rem;    
+    margin-left: 18rem;
+}
+
+.divSecondMenu a,
+.divFirstMenu a
+{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.divSecondMenu a img,
+.divFirstMenu a img {
+    margin-right: 0.3125rem;
+}
+
+.divFirstMenu p {
+    margin-top: 5rem;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 500;
+}
