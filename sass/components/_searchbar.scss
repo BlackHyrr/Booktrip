@@ -1,0 +1,58 @@
+.searchBar-div {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37.5rem; 
+    height: 3.9375rem; 
+    background-color: #fff;
+}
+
+.selectItems1-div,
+.selectItems2-div,
+.selectItems3-div,
+.selectItems4-div {
+    height: 3.9375rem; 
+    width: 8.5rem; 
+    float: left; 
+    border-right: 0.0625rem solid #ddd; 
+}
+    
+.selectItems1-div p,
+.selectItems2-div p,
+.selectItems3-div p,
+.selectItems4-div p {
+    color: #818181; 
+    margin: 0; 
+    font-size: 0.6875rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-top: 0.5rem; 
+    font-family: 'Poppins';
+}
+    
+.searchBar-div select {
+    width: 100%;
+    padding: 0.5rem; 
+    border: none; 
+    border-radius: 0.25rem; 
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 500;
+}
+
+.buttonSearch-div {
+    position: absolute;
+    height: 3.9375rem; 
+    width: 3.75rem; 
+    background-color: $PrimaryColor;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
