@@ -10,6 +10,219 @@
 @import
     "./utils/extends";
 
+// SCSS Header
+
+header {
+    background: url('../images/header.jpg') center/cover no-repeat; 
+    height: 138vh;
+    margin-bottom: 2rem;
+}
+    
+header p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.875rem; 
+    line-height: 1.5;
+}
+    
+header h1{
+    text-align: left;
+}
+    
+header::before {
+    content: "";
+    position: absolute;
+    top: 125%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+}
+    
+.navbar {
+    height: 6.75rem;
+    background-color: rgba(84, 84, 84, 0.5); 
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 0 1.25rem; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+    
+.navbar img {
+    height: 4.6875rem;
+    width: auto;
+    margin-left: 1.875rem; 
+}
+    
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1; 
+    margin-left: 4.375rem; 
+}
+    
+.nav-list li {
+    margin-right: 3.4375rem; 
+}
+    
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3); 
+}
+    
+.nav-list a::after {
+    content: "";
+    display: block;
+    height: 0.125rem; 
+    width: 0;
+    background-color: $PrimaryColor; 
+    transition: width 0.3s ease; 
+}
+    
+.nav-list a:hover::after {
+    width: 3.75rem; 
+}
+    
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+    
+.auth-buttons button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-left: 0.625rem; 
+    padding: 1rem 1.875rem; 
+    border: 0.125rem solid $PrimaryColor; 
+    background-color: transparent;
+    color: $PrimaryColor; 
+    font-size: 0.9375rem; 
+    cursor: pointer;
+    border-radius: 2.5rem; 
+}
+    
+.auth-buttons #inscription-btn {
+    background-color: $PrimaryColor; 
+    color: #fff;
+    border-radius: 2.5rem; 
+}
+    
+.auth-buttons #connexion-btn {
+    margin-right: 1.25rem; 
+}
+    
+.middle-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 50rem; 
+    height: 18.75rem; 
+}
+    
+.searchBar-div {
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 37.5rem; 
+    height: 3.9375rem; 
+    background-color: #fff;
+}
+    
+.textBar-div {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 25rem; 
+    height: 2.375rem; 
+}
+    
+.textBar-div h2 {
+    font-style: italic;
+    font-weight: 700;
+}
+    
+.buttonSearch-div {
+    position: absolute;
+    height: 3.9375rem; 
+    width: 3.75rem; 
+    background-color: $PrimaryColor;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.selectItems1-div,
+.selectItems2-div,
+.selectItems3-div,
+.selectItems4-div {
+    height: 3.9375rem; 
+    width: 8.5rem; 
+    float: left; 
+    border-right: 0.0625rem solid #ddd; 
+}
+    
+.selectItems1-div p,
+.selectItems2-div p,
+.selectItems3-div p,
+.selectItems4-div p {
+    color: #818181; 
+    margin: 0; 
+    font-size: 0.6875rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-top: 0.5rem; 
+    font-family: 'Poppins';
+}
+    
+.searchBar-div select {
+    width: 100%;
+    padding: 0.5rem; 
+    border: none; 
+    border-radius: 0.25rem; 
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 500;
+    }
+    
+.booking-buttons {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    }
+      
+.booking-buttons button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0.625rem 1.875rem; 
+    background-color: $PrimaryColor; 
+    border: 0.125rem solid $PrimaryColor; 
+    font-size: 0.9375rem; 
+    cursor: pointer;
+    border-radius: 2.5rem; 
+    color: #fff;
+    margin-top: 1.5rem;
+    position: relative;
+}
+    
+
 * {
     box-sizing: border-box;
 }
