@@ -174,7 +174,12 @@ section {
 
     div {
         max-width: 50%;
+        margin-top: 4rem;
         padding: 0.8rem;
+
+        h3 {
+            margin-bottom: 2rem;
+        }
     }
     img {
         width: 100%;
@@ -184,7 +189,8 @@ section {
 // Section 2 | Travels
 
 #travels {
-    background-image: linear-gradient(white 40%, rgba(255,122,0,0.28) 40%);
+    padding-bottom: 3rem;
+    background-image: linear-gradient(white 45%, rgba(255,122,0,0.28) 45%);
 }
 .travels-container {
     display: flex;
@@ -195,34 +201,42 @@ section {
     .travels-cards {
         width: 20%;
         background-color: white;
-        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+        font-family: 'Poppins';
 
         img {
             width: 100%;
         }
         .travels-infos {
-            padding: 0.5rem;
+            padding: 1rem;
+
+            h3 {
+                font-family: 'Abhaya Libre';
+            }
         }
         .travels-infos-plus {
             display: flex;
             justify-content: space-between;
             margin-top: 3rem;
         }
+        .price-text {
+            text-align: right;
+        }
         .price {
-            font-size: 1.3rem;
+            font-size: 2rem;
         }
         .note {
-            width: 35%;
+            width: 55%;
             padding: 0.2rem;
-            margin: auto;
             text-align: center;
+            font-size: 1.5rem;
             border: 2px solid $PrimaryColor;
         }
         .note-star {
             display: flex;
 
             img {
-                width: 20%;
+                width: 13%;
             }
         }
     }
