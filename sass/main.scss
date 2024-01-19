@@ -1,0 +1,47 @@
+// Initialisation
+@import 
+    "./base/reset";
+@import
+    "./utils/variables";
+
+// Import
+@import 
+    "./base/typography";
+
+@import
+    "./utils/extends";
+
+@import
+    "./components/navbar",
+    "./components/searchbar",
+    "./components/buttons";
+
+@import 
+    "./layout/header",
+    "./layout/footer";
+
+@import 
+    "./pages/home";
+
+
+// Global
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 12rem !important;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.fa-star, .fa-star-half-stroke {
+    color: $StarColor;
+    width: 15px;
+    -webkit-text-stroke: 0.1px solid black;
+}

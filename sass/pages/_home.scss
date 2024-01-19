@@ -1,0 +1,163 @@
+// Section 1 | Introduction
+
+.introduction-section {
+    article:nth-child(odd) {
+        div {
+            padding: 2rem 0 2rem 2rem;
+        }
+    }
+
+    article:nth-child(even) {
+        div {
+            padding: 2rem 2rem 2rem 0;
+        }
+    }
+
+    .introduction-article {
+        display: flex;
+        line-height: 1.2;
+    
+        
+        
+        div {
+            max-width: 50%;
+    
+            h3 {
+                margin-bottom: 2rem;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    
+        p {
+            line-height: 140%;
+            color: $SecondaryColor;
+            font-family: 'poppins';
+            font-size: 1rem;
+            font-weight: lighter;
+        }
+    }
+}
+
+// Section 2 | Travels
+
+.travels-section {
+    padding-bottom: 3rem;
+    background-image: linear-gradient(white 45%, rgba(255,122,0,0.28) 45%);
+
+    .travels-container {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+    
+        .travels-cards {
+            width: 20%;
+            background-color: white;
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+            font-family: 'Poppins';
+    
+            img {
+                width: 100%;
+                height: 50%;
+            }
+            .travels-infos {
+                padding: 1rem;
+    
+                h3 {
+                    font-family: 'Abhaya Libre';
+                }
+            }
+            .travels-infos-plus {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 3rem;
+            }
+            .price-text {
+                text-align: right;
+            }
+            .price {
+                font-size: 2rem;
+            }
+            .note {
+                width: 55%;
+                padding: 0.2rem;
+                margin-bottom: 0.2rem;
+                text-align: center;
+                font-size: 1.5rem;
+                border: 2px solid $PrimaryColor;
+            }
+            .note-star {
+                display: flex;
+    
+                img {
+                    width: 13%;
+                }
+            }
+        }
+        .arrow {
+            width: 1.5rem;
+        }
+    }
+}
+
+
+// Section 3 | Reviews
+
+.review-section {
+    padding: 6rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), url("../images/mountains-1852955_1920.jpg");
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 4rem;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.95));
+    }
+
+    .review-rating {
+        text-align: center;
+    }
+
+    .review {
+        max-width: 800px;
+        margin: 2rem auto;
+
+        p {
+            position: relative;
+            color: white;
+            text-align: center;
+            line-height: 1.5rem;
+            font-size: 1rem;
+
+            .review-quote {
+                font-size: 4rem;
+                font-weight: bold;
+                position: absolute;
+                color: $PrimaryColor;
+
+                &:first-child {
+                    top: -1rem;
+                    left: -1rem;
+                }
+
+                &:last-child {
+                    bottom: -1rem;
+                    right: -1rem;
+                }
+            }
+        }
+
+        p:first-child {
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .review-author {
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+    }
+}
