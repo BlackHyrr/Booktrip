@@ -30,7 +30,7 @@ yarn-error.log
 
 #CSS
 css/
-!main.min.css.map
+!css/main.min.css
 
 # Miscellaneous
 .sass-cache/

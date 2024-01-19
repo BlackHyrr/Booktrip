@@ -184,12 +184,12 @@ section {
 // Section 2 | Travels
 
 #travels {
-    background-image: linear-gradient(white 35%, rgba(255,122,0,0.28) 35%);
+    background-image: linear-gradient(white 40%, rgba(255,122,0,0.28) 40%);
 }
 .travels-container {
     display: flex;
     justify-content: space-around;
-    width: 75%;
+    width: 80%;
     margin: auto;
 
     .travels-cards {
@@ -212,7 +212,21 @@ section {
             font-size: 1.3rem;
         }
         .note {
+            width: 35%;
+            padding: 0.2rem;
+            margin: auto;
+            text-align: center;
             border: 2px solid $PrimaryColor;
         }
+        .note-star {
+            display: flex;
+
+            img {
+                width: 20%;
+            }
+        }
+    }
+    .arrow {
+        width: 1.5rem;
     }
 }
