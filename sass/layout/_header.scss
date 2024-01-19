@@ -46,14 +46,14 @@ header {
         height: 100%;
         background: linear-gradient(180deg, rgba(51, 51, 51, 0) 30%, rgba(51, 51, 51, 0.62) 40%, rgba(59, 59, 59, 0.567895) 50%, rgba(80, 80, 80, 0) 60%);
     }
-}
-    
-header::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 15%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 15%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+    }
 }
