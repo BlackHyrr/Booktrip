@@ -1,17 +1,9 @@
 .booking-buttons {
     position: relative; 
-    display: flex;
-    align-items: center;
 
     button {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
         padding: 0.625rem 1.875rem; 
         background-color: $PrimaryColor; 
-        border: 0.125rem solid $PrimaryColor; 
-        font-size: 0.9375rem; 
-        cursor: pointer;
-        border-radius: 2.5rem; 
         color: #fff;
         margin-top: 1.5rem;
         position: relative;
@@ -19,20 +11,12 @@
 }
 
 .auth-buttons {
-    display: flex;
-    align-items: center;
 
     button {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
         margin-left: 0.625rem; 
-        padding: 0.75rem 2.5rem; 
-        border: 0.125rem solid $PrimaryColor; 
+        padding: 0.75rem 2.5rem;  
         background-color: transparent;
         color: $PrimaryColor; 
-        font-size: 0.9375rem; 
-        cursor: pointer;
-        border-radius: 2.5rem; 
     }
 
     .inscription-btn {
@@ -43,5 +27,19 @@
         
     .connexion-btn {
         margin-right: 1.25rem; 
+    }
+}
+
+.booking-buttons, .auth-buttons {
+    display: flex;
+    align-items: center;
+
+    button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        border: 0.125rem solid $PrimaryColor;
+        font-size: 0.9375rem;
+        border-radius: 2.5rem;
+        cursor: pointer;
     }
 }

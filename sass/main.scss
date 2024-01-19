@@ -34,6 +34,12 @@ section {
     margin-top: 12rem !important;
 }
 
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .fa-star, .fa-star-half-stroke {
     color: $StarColor;
     width: 15px;
